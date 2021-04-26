@@ -1,0 +1,144 @@
+body {
+  background-color: #fafafa;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+}
+header h2 {
+  padding: 0 20px;
+}
+header nav {
+  display: flex;
+  justify-content: center;
+}
+header nav a {
+  color: #333;
+  text-decoration: none;
+  margin: 0 50px;
+  display: flex;
+  align-items: flex-end;
+}
+header form {
+  padding: 0 40px;
+  display: flex;
+  align-items: center;
+  align-content: center;
+}
+
+header + main:not(.home) {
+  border-top: 15px solid #555;
+}
+
+main.home {
+  background-image: url("garden.jpg");
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 600px;
+}
+main.home h1 {
+  color: #fff;
+  font-size: 120px;
+  text-align: center;
+  margin: 0;
+  padding: 150px 0;
+}
+
+main.products {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Product card */
+.card {
+  font-size: 0.895em;
+  box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+  background-color: #fff;
+  margin: 10px auto;
+  width: 344px;
+  color: #333;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.card > * {
+  padding: 16px;
+}
+.card h1,
+.card h2,
+.card h3,
+.card h4,
+.card h5,
+.card h6 {
+  margin: 0;
+}
+.card h5,
+.card h6 {
+  color: #999;
+}
+.card p {
+  margin-bottom: 0;
+}
+.card .footer {
+  border-top: 1px solid #e0e0e0;
+  background-color: #f8f8f8;
+}
+.card button {
+  background-color: transparent;
+  color: darkturquoise;
+  font-weight: bold;
+  text-transform: uppercase;
+  border: 0;
+  padding: 8px;
+}
+.card button:hover {
+  background-color: rgb(214, 247, 247);
+}
+.card button:active,
+.card button:focus {
+  background-color: paleturquoise;
+}
+
+main.about p:first-letter {
+  font-size: 3rem;
+  line-height: 3rem;
+  float: left;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+#typingtest {
+  margin: 75px auto;
+  width: 800px;
+}
+
+main.fizzbuzz {
+  display: flex;
+  flex-wrap: wrap;
+}
+main.fizzbuzz h1,
+main.fizzbuzz h3,
+main.fizzbuzz small {
+  display: inline;
+  margin: 0;
+  padding: 0 0.5em;
+  line-height: 1em;
+  vertical-align: baseline;
+}
+main.fizzbuzz h1 {
+  font-size: 4em;
+  font-weight: bolder;
+}
+main.fizzbuzz h3 {
+  font-size: 3em;
+  padding-top: 10px;
+}
+main.fizzbuzz small {
+  font-size: 1em;
+  font-weight: 200;
+  padding-top: 2em;
+}
